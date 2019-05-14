@@ -1,0 +1,197 @@
+body {
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+}
+
+.lightText {
+  color: gray;
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+}
+
+.normalText {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+.boldText {
+  padding-top: 15px;
+  display: inline-block;
+  color: blue;
+  font-family: 'Gentium Basic', serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bullet {
+  margin-right: 25px;
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button {
+  border-radius: 3px;
+  background: blue;
+  color: white !important;
+  cursor: pointer;
+  font-family: 'Gentium Basic', serif;
+  font-weight: 400;
+  padding: 10px 35px 10px 35px;
+  display: inline-block;
+}
+
+.portfolio {
+   padding: 80px 100px 80px 100px;
+}
+
+.portfolio > .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.head > .title {
+  width: 50%;
+}
+
+.work-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-container {
+  perspective: 1000px;
+}
+
+.work{
+  display: inline-block;
+  padding: 30px 50px 50px 50px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  border-left: 4px solid blue;
+  max-width: 200px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 10px;
+  box-shadow: 5px 10px 30px -4px hsla(0, 0%, 0%, 0.15);
+}
+
+.work:hover {
+  box-shadow: 10px 15px 50px -4px hsla(0, 0%, 0%, 0.15);
+  transform: translateZ(0px)
+}
+
+.work > .normalText {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.work > .lightText {
+  margin-bottom: 25px;
+}
+
+.hireMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 100px 80px 100px;
+}
+
+.hireMe > .des {
+  width: 40%;
+}
+
+.hireMe > .pointers {
+  width: max-content;
+}
+
+.des > .lightText {
+  width: 490px;
+  margin: 30px 0 30px 0;
+}
+
+.pointers ol {
+  padding: 0;
+}
+
+.pointers li {
+  margin-bottom: 20px;
+}
+
+.pointers .points {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: inline-block;
+}
+
+.people {
+  padding: 80px 100px 80px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.people > .comments {
+  width: 50%;
+}
+
+.people > .image {
+  width: 30%;
+  height: -webkit-fill-available;
+}
+
+.endMail {
+  box-shadow: 5px 10px 30px -4px hsla(0, 0%, 0%, 0.15);
+  border: 1px solid #DCDCDC;
+  cursor: pointer;
+  border-radius: 7px;
+  text-align: center;
+  padding: 40px 180px 40px 180px;
+  width: max-content;
+  margin: 100px auto 100px auto;
+}
+
+.endNav {
+  text-align: center;
+}
+
+.endNav > ol {
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.endNav li {
+  display: inline;
+  margin: 30px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.fab {
+  font-size: 20px;
+  margin: 20px;
+  color: blue;
+}
+
+.endNote {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
