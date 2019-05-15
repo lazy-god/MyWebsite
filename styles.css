@@ -1,7 +1,11 @@
 body {
-  max-width: 1400px;
-  min-width: 1400px;
-  margin: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.site {
+  background: white;
+  padding: 50px 0;
 }
 
 a {
@@ -26,7 +30,7 @@ ol {
 .boldText {
   padding-top: 15px;
   display: inline-block;
-  color: blue;
+  color: #6649F6;
   font-family: 'Gentium Basic', serif;
   font-size: 40px;
   font-weight: 700;
@@ -36,15 +40,15 @@ ol {
   margin-right: 25px;
   width: 15px;
   height: 15px;
-  background: blue;
+  background: #6649F6;
   border-radius: 50%;
   display: inline-block;
 }
 
 .button {
   border-radius: 3px;
-  background: blue;
-  color: white !important;
+  background: #6649F6;
+  color: white;
   cursor: pointer;
   font-family: 'Gentium Basic', serif;
   font-weight: 400;
@@ -52,23 +56,106 @@ ol {
   display: inline-block;
 }
 
+.startNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 80px 40px;
+  align-items: center;
+  padding-bottom: 80px;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
+}
+
+.hello {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 100px; 
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
+}
+
+.hello > .image {
+  width: 45%;
+}
+
+.hello > .content {
+  width: 35%;
+}
+
+.content > .boldText {
+  padding: 0;
+}
+
+.content > .subhead {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.content > .button {
+  margin: 20px 0;
+}
+
+.about {
+  display: flex;
+  padding: 80px 100px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
+}
+
+.about > .image {
+  width: 50%;
+}
+
+.about > .me {
+  width: 45%;
+}
+
+.me > .lightText {
+  margin: 10px 0;
+}
+
+.me > .button {
+  margin: 20px 0;
+}
+
 .portfolio {
-   padding: 80px 100px 80px 100px;
+  background-image: linear-gradient(to bottom right, #6649F6, purple);
+  padding: 80px 0;
 }
 
 .portfolio > .head {
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
 }
 
 .head > .title {
   width: 50%;
 }
 
+.title > .boldText, .title > .lightText {
+  color: white;
+}
+
+.head > .button {
+  background: white;
+  color: #6649F6;
+}
+
 .work-card {
   display: flex;
+  margin: 50px 0;
   justify-content: space-between;
 }
 
@@ -80,9 +167,9 @@ ol {
   display: inline-block;
   padding: 30px 50px 50px 50px;
   cursor: pointer;
+  background-image: linear-gradient(to bottom right, #6649F6, purple);
   transform-style: preserve-3d;
   transform: translateZ(-100px);
-  border-left: 4px solid blue;
   max-width: 200px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-radius: 10px;
@@ -107,7 +194,10 @@ ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 80px 100px 80px 100px;
+  padding: 80px 100px;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
 }
 
 .hireMe > .des {
@@ -141,13 +231,16 @@ ol {
 }
 
 .people {
-  padding: 80px 100px 80px 100px;
+  padding: 80px 100px;
   display: flex;
   justify-content: space-between;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: auto;
 }
 
 .people > .comments {
-  width: 50%;
+  width: 60%;
 }
 
 .people > .image {
@@ -188,10 +281,10 @@ ol {
 .fab {
   font-size: 20px;
   margin: 20px;
-  color: blue;
+  color: #6649F6;
 }
 
 .endNote {
   text-align: center;
-  margin: 20px 0 40px 0;
+  margin: 20px 0 0 0;
 }
