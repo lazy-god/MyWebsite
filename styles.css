@@ -1,3 +1,15 @@
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,6 +21,7 @@ body {
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
@@ -19,20 +32,20 @@ ol {
 .lightText {
   color: gray;
   font-family: 'Roboto Slab', serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .normalText {
   font-family: 'Roboto Slab', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .boldText {
-  padding-top: 15px;
+  padding: 15px 0 30px 0;
   display: inline-block;
   color: #6649F6;
   font-family: 'Gentium Basic', serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -63,7 +76,6 @@ ol {
   align-items: center;
   padding-bottom: 80px;
   max-width: 1400px;
-  min-width: 1400px;
   margin: auto;
 }
 
@@ -71,18 +83,9 @@ ol {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 80px 100px; 
-  max-width: 1400px;
-  min-width: 1400px;
+  text-align: center;
+  height: 80vh;
   margin: auto;
-}
-
-.hello > .image {
-  width: 45%;
-}
-
-.hello > .content {
-  width: 35%;
 }
 
 .content > .boldText {
@@ -91,29 +94,33 @@ ol {
 
 .content > .subhead {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .content > .button {
   margin: 20px 0;
 }
 
+.content > .downArrow {
+  display: block;
+  font-size: 5rem;
+  color: #6646F6;
+  position: relative;
+  margin: 100px auto 0 auto;
+  animation: jump 5s infinite;
+}
+
 .about {
   display: flex;
-  padding: 80px 100px;
+  padding: 0 100px 60px 100px;
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
-  min-width: 1400px;
   margin: auto;
 }
 
-.about > .image {
-  width: 50%;
-}
-
 .about > .me {
-  width: 45%;
+  width: 55%;
 }
 
 .me > .lightText {
@@ -126,6 +133,7 @@ ol {
 
 .portfolio {
   background-image: linear-gradient(to bottom right, #6649F6, purple);
+  display: none;
   padding: 80px 0;
 }
 
@@ -155,22 +163,38 @@ ol {
 
 .work-card {
   display: flex;
-  margin: 50px 0;
-  justify-content: space-between;
+  position: relative;
+  padding: 50px; 
+  justify-content: space-around;
+}
+
+.work-card> .dots {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.work-card > .bgPeople {
+  top: 0;
+  right: 0;
+  position: absolute;
+  max-width: 200px; 
 }
 
 .work-container {
+  width: 50%;
+  min-width: 200px;
   perspective: 1000px;
 }
 
 .work{
   display: inline-block;
+  color: white;
   padding: 30px 50px 50px 50px;
   cursor: pointer;
   background-image: linear-gradient(to bottom right, #6649F6, purple);
   transform-style: preserve-3d;
   transform: translateZ(-100px);
-  max-width: 200px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-radius: 10px;
   box-shadow: 5px 10px 30px -4px hsla(0, 0%, 0%, 0.15);
@@ -188,16 +212,21 @@ ol {
 
 .work > .lightText {
   margin-bottom: 25px;
+  color: white;
+}
+
+.work a {
+  color: white;
 }
 
 .hireMe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 80px 100px;
+  padding: 60px 100px;
   max-width: 1400px;
-  min-width: 1400px;
   margin: auto;
+  align-items: center;
 }
 
 .hireMe > .des {
@@ -208,9 +237,12 @@ ol {
   width: max-content;
 }
 
+.hireMe > .button {
+  display: none;
+}
+
 .des > .lightText {
-  width: 490px;
-  margin: 30px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 .pointers ol {
@@ -231,21 +263,9 @@ ol {
 }
 
 .people {
-  padding: 80px 100px;
-  display: flex;
-  justify-content: space-between;
+  padding: 60px 100px;
   max-width: 1400px;
-  min-width: 1400px;
   margin: auto;
-}
-
-.people > .comments {
-  width: 60%;
-}
-
-.people > .image {
-  width: 30%;
-  height: -webkit-fill-available;
 }
 
 .endMail {
@@ -288,3 +308,228 @@ ol {
   text-align: center;
   margin: 20px 0 0 0;
 }
+
+/* ------------------ Media Queries ---------------------------- */
+@media screen and (min-width: 561px) and (max-width: 1000px) {
+  .boldText {
+    font-size: 2rem;
+    padding: 10px 0 20px 0;
+  }
+
+  .button {
+    font-size: 0.875rem;
+  }
+
+  .bullet {
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .lightText {
+    font-size: 0.75rem;
+  }
+
+  .normalText {
+    font-size: 1rem;
+  }
+
+  /* ---------------- START NAV -------------------------*/
+  .startNav {
+    padding: 0 20px 40px 20px;
+  }
+  /* ---------------- START NAV -------------------------*/
+
+  /* ---------------- ABOUT -------------------------*/
+  .about {
+    flex-wrap: wrap;
+    padding: 40px 30px;
+  }
+  
+  .about > .me {
+    width: 100%;
+  }
+
+  .about > .image {
+    display: none;
+  }
+
+  .me > .boldText {
+    padding: 30px 0 0 0;
+  }
+  /* ---------------- ABOUT -------------------------*/
+
+  /* ---------------- HIREME -------------------------*/
+  .hireMe {
+    padding: 40px 30px;
+  }
+
+  /* ---------------- HIREME -------------------------*/
+  
+  /* ---------------- PEOPLE -------------------------*/
+  .people {
+    padding: 40px 30px;
+  }
+
+  .people .bgPeople{
+    display: none;
+  }
+
+  .people > .comments {
+    width: 100%;
+  }
+  
+  .work-container {
+    width: 50%;
+  }
+
+  .work-card {
+    padding: 25px 0 25px 25px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------------- PEOPLE -------------------------*/
+
+  /* ---------------- ENDMAIL -------------------------*/
+  .endMail {
+    padding: 30px 100px;
+  }
+  
+  .endMail > .boldText {
+    font-size: 1.5rem;
+  }
+  /* ---------------- ENDMAIL -------------------------*/
+
+  /* ---------------- ENDNAV -------------------------*/
+  .endNav li {
+    margin: 15px;
+  }
+  /* ---------------- ENDNAV -------------------------*/
+}
+
+@media screen and (max-width: 560px) {
+  .boldText {
+    font-size: 2rem;
+    padding: 10px 0 20px 0;
+  }
+
+  .button {
+    font-size: 0.875rem;
+  }
+
+  .bullet {
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .lightText {
+    font-size: 0.75rem;
+  }
+
+  .normalText {
+    font-size: 1rem;
+  }
+
+  /* ---------------- START NAV -------------------------*/
+  .startNav {
+    padding: 0 20px 40px 20px;
+  }
+
+  .startNav > .image {
+    width: 50px;
+  }
+  /* ---------------- START NAV -------------------------*/
+
+  /* ---------------- HELLO -------------------------*/
+  .content > .subhead {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .content > .downArrow {
+    font-size: 2.5rem; 
+  }
+  /* ---------------- HELLO -------------------------*/
+
+  /* ---------------- ABOUT -------------------------*/
+  .about {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  
+  .about > .me {
+    width: 100%;
+  }
+
+  .about > .image {
+    display: none;
+  }
+  
+  .me > .boldText {
+    padding: 30px 0 0 0;
+  }
+  /* ---------------- ABOUT -------------------------*/
+
+  /* ---------------- HIREME -------------------------*/
+  .hireMe {
+    padding: 40px 20px;
+  }
+
+  .hireMe > .des{
+    width: 100%;
+  }
+
+  .hireMe > .pointers {
+    width: 100%;
+  }
+
+  .hireMe > .button {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .des > .button {
+    display: none;
+  }
+  /* ---------------- HIREME -------------------------*/
+  
+  /* ---------------- PEOPLE -------------------------*/
+  .people {
+    padding: 40px 20px;
+  }
+
+  .people > .comments {
+    width: 100%;
+  }
+
+  .work-container {
+    width: 100%;
+  }
+
+  .work-card {
+    padding: 25px 0 25px 25px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------------- PEOPLE -------------------------*/
+
+  /* ---------------- ENDMAIL -------------------------*/
+  .endMail {
+    padding: 30px 30px;
+  }
+  
+  .endMail > .boldText {
+    font-size: 1.25rem;
+  }
+  /* ---------------- ENDMAIL -------------------------*/
+
+  /* ---------------- ENDNAV -------------------------*/
+  .endNav li {
+    margin: 10px;
+  }
+  /* ---------------- ENDNAV -------------------------*/
+}
+
+/* --------------------------------------------------------------- */
+
