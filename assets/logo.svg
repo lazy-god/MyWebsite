@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="82px" height="73px" viewBox="0 0 82 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="130px" height="108px" viewBox="0 0 130 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Group</title>
+    <title>Combined Shape + Combined Shape Mask</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <radialGradient cx="17.9161659%" cy="26.8694196%" fx="17.9161659%" fy="26.8694196%" r="111.064848%" gradientTransform="translate(0.179162,0.268694),scale(1.000000,0.530612),rotate(51.092052),translate(-0.179162,-0.268694)" id="radialGradient-1">
+        <radialGradient cx="56.751392%" cy="0%" fx="56.751392%" fy="0%" r="108.166391%" gradientTransform="translate(0.567514,0.000000),scale(0.758567,1.000000),rotate(104.855323),translate(-0.567514,-0.000000)" id="radialGradient-1">
             <stop stop-color="#6646F6" offset="0%"></stop>
-            <stop stop-color="#A020E1" offset="100%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
         </radialGradient>
-        <radialGradient cx="14.5234375%" cy="29.1095344%" fx="14.5234375%" fy="29.1095344%" r="127.544218%" gradientTransform="translate(0.145234,0.291095),scale(1.000000,0.510204),rotate(47.919659),translate(-0.145234,-0.291095)" id="radialGradient-2">
-            <stop stop-color="#6646F6" offset="0%"></stop>
-            <stop stop-color="#A020E1" offset="100%"></stop>
-        </radialGradient>
+        <path d="M21.6765875,20.3037348 L114.833103,17.7010723 C119.249658,17.5776799 122.930012,21.0579756 123.053404,25.4745302 C123.057702,25.6283733 123.05756,25.7823084 123.052978,25.9361432 L121.096444,91.6200131 C120.970231,95.8571742 117.5608,99.2603146 113.323413,99.3787013 L20.166897,101.981364 C15.7503424,102.104756 12.0699882,98.6244605 11.9465958,94.2079059 C11.9422977,94.0540628 11.9424398,93.9001278 11.9470221,93.7462929 L13.9035558,28.062423 C14.0297687,23.8252619 17.4392004,20.4221215 21.6765875,20.3037348 Z" id="path-2"></path>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="BrushScriptMT, Brush Script MT" font-size="80" font-weight="normal">
-        <g id="Group" transform="translate(2.000000, -19.000000)">
-            <text id="D" fill="url(#radialGradient-1)">
-                <tspan x="0.16015625" y="71">D</tspan>
-            </text>
-            <text id="P" fill="url(#radialGradient-2)">
-                <tspan x="27" y="85">P</tspan>
-            </text>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape-+-Combined-Shape-Mask" transform="translate(-2.365844, -6.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#radialGradient-1)" transform="translate(67.500000, 59.841218) rotate(21.000000) translate(-67.500000, -59.841218) " xlink:href="#path-2"></use>
+            <path d="M62.7206824,70.9474469 C59.4268336,74.3330725 54.6636166,76.4603175 49.3658437,76.4603175 C39.4247182,76.4603175 31.3658437,68.9699703 31.3658437,59.7301587 C31.3658437,50.4903472 39.4247182,43 49.3658437,43 C54.6636166,43 59.4268336,45.127245 62.7206824,48.5128706 L62.7206824,9 L67.3658437,9 L67.3658437,77 L62.7206824,77 L62.7206824,70.9474469 Z M49.0755211,71.0634921 C55.9701727,71.0634921 61.5593921,65.8685738 61.5593921,59.4603175 C61.5593921,53.0520611 55.9701727,47.8571429 49.0755211,47.8571429 C42.1808696,47.8571429 36.5916501,53.0520611 36.5916501,59.4603175 C36.5916501,65.8685738 42.1808696,71.0634921 49.0755211,71.0634921 Z" id="Combined-Shape" fill="#EDF243" mask="url(#mask-3)"></path>
+            <path d="M73.5916501,47.9433132 C76.8525986,44.8903948 81.3717023,43 86.3658437,43 C96.3069692,43 104.365844,50.4903472 104.365844,59.7301587 C104.365844,68.9699703 96.3069692,76.4603175 86.3658437,76.4603175 C81.3717023,76.4603175 76.8525986,74.5699227 73.5916501,71.5170043 L73.5916501,111 L68.3658437,111 L68.3658437,43 L73.5916501,43 L73.5916501,47.9433132 Z M86.0755211,71.0634921 C92.9701727,71.0634921 98.5593921,65.8685738 98.5593921,59.4603175 C98.5593921,53.0520611 92.9701727,47.8571429 86.0755211,47.8571429 C79.1808696,47.8571429 73.5916501,53.0520611 73.5916501,59.4603175 C73.5916501,65.8685738 79.1808696,71.0634921 86.0755211,71.0634921 Z" id="Combined-Shape" fill="#A7E72B" mask="url(#mask-3)"></path>
         </g>
     </g>
 </svg>
